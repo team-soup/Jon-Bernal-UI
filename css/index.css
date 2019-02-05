@@ -4,6 +4,10 @@
   font-weight: 400;
   src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v9/jizaRExUiTo99u79D0KEwA.ttf) format('truetype');
 }
+.btn {
+  padding: 15px 20px;
+  font-size: 2.2rem;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -111,7 +115,7 @@ section {
   display: block;
 }
 body {
-  line-height: 1;
+  line-height: 1.25;
 }
 ol,
 ul {
@@ -131,4 +135,50 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+html {
+  font-size: 62%;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+a,
+p {
+  font-size: 1.6rem;
+  color: #30323D;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.nav {
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  width: 100%;
+}
+.nav .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.logo-container p {
+  color: white;
+  font-size: 2.5rem;
+}
+.logo {
+  width: 100px;
+  height: auto;
+}
+.nav-item {
+  color: white;
 }
