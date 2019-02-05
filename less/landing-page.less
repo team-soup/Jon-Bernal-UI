@@ -1,6 +1,5 @@
 .hero {
-  background-color: white;
-  // background-image: url("../assets/img/soup-photo-1.jpeg");
+  // background-image: url("https://images.unsplash.com/photo-1495195129352-aeb325a55b65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1055&q=80");
   // background-size: cover;
   min-height: 500px;
   .cust-flex(column, center, center);
@@ -19,21 +18,95 @@
   }
 }
 
-.features {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 60px 0;
+.serviceTimes {
+  padding: 60px 0;
+  background-color: #323232;
+  .card {
+    width: 90%;
+    margin: 0 auto;
+    padding: 5%;
+    background-color: @color-background;
+    h3 {
+      font-size: 1.75rem;
+      font-weight: bold;
+      text-align: center;
+      margin: 20px 0;
+    }
+    div {
+      .cust-flex(row, space-evenly, center);
+      .days {
+        .cust-flex(column, flex-start, center);
+        p {
+          margin-bottom: 5px;
+        }
+      }
+      .hours {
+        .cust-flex(column, flex-end, center);
+        p {
+          margin-bottom: 5px;
+        }
+      }
+    }
+    h4 {
+      text-align: center;
+      margin: 20px 0;
+      font-size: 1.8rem;
+    }
+  }
 }
 
-.feature {
-  max-width: 90%;
-  padding: 30px 0;
+.volCall {
+  width: 90%;
+  margin: 30px auto 0px auto;
   h4 {
-    font-size: 2rem;
+    text-align: center;
+    font-size: 1.8rem;
+    color: white;
   }
   p {
-    margin-top: 10px;
+    margin-top: 20px;
+    color: white;
   }
+}
+
+.photos {
+  padding: 60px 0; 
+  background-color: @color-background;
+  h3 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  img {
+    width: 100%;
+    min-height: 200px;
+    margin: 10px 0;
+  }
+}
+
+.giveBack {
+  display: flex;
+  flex-direction: column;
+  p {
+    margin-bottom: 30px;
+  }
+  .split {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.btn-green {
+  background-color: @color-seaGreen;
+  color: white;
+}
+.btn-blue {
+  background-color: @color-blue;
+  color: white;
 }

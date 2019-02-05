@@ -4,9 +4,12 @@
   font-weight: 400;
   src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v9/jizaRExUiTo99u79D0KEwA.ttf) format('truetype');
 }
+.card {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
 .btn {
-  padding: 15px 20px;
-  font-size: 2.2rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  padding: 15px;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -184,6 +187,7 @@ body {
   color: white;
   font-size: 2.75rem;
   font-weight: bold;
+  text-align: center;
 }
 .menu {
   display: flex;
@@ -200,6 +204,7 @@ body {
   padding: 10px 0;
   margin: 5px 0;
   font-weight: bold;
+  background-color: #4c4c4c;
 }
 .menu-btn:hover {
   background-color: #585858;
@@ -230,12 +235,14 @@ footer .container {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .footer-item {
   color: white;
+  padding: 10px 3%;
+  width: max-content;
 }
 .hero {
-  background-color: white;
   min-height: 500px;
   display: flex;
   flex-direction: column;
@@ -253,20 +260,100 @@ footer .container {
   margin-top: 30px;
   text-align: center;
 }
-.features {
+.serviceTimes {
+  padding: 60px 0;
+  background-color: #323232;
+}
+.serviceTimes .card {
+  width: 90%;
+  margin: 0 auto;
+  padding: 5%;
+  background-color: #eff9f0;
+}
+.serviceTimes .card h3 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+}
+.serviceTimes .card div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.serviceTimes .card div .days {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  margin: 60px 0;
 }
-.feature {
-  max-width: 90%;
-  padding: 30px 0;
+.serviceTimes .card div .days p {
+  margin-bottom: 5px;
 }
-.feature h4 {
+.serviceTimes .card div .hours {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.serviceTimes .card div .hours p {
+  margin-bottom: 5px;
+}
+.serviceTimes .card h4 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.8rem;
+}
+.volCall {
+  width: 90%;
+  margin: 30px auto 0px auto;
+}
+.volCall h4 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: white;
+}
+.volCall p {
+  margin-top: 20px;
+  color: white;
+}
+.photos {
+  padding: 60px 0;
+  background-color: #eff9f0;
+}
+.photos h3 {
+  font-size: 3rem;
+  text-align: center;
+}
+.photos p {
+  text-align: center;
   font-size: 2rem;
+  font-weight: bold;
 }
-.feature p {
-  margin-top: 10px;
+.photos img {
+  width: 100%;
+  min-height: 200px;
+  margin: 10px 0;
+}
+.giveBack {
+  display: flex;
+  flex-direction: column;
+}
+.giveBack p {
+  margin-bottom: 30px;
+}
+.giveBack .split {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.btn-green {
+  background-color: #2e964f;
+  color: white;
+}
+.btn-blue {
+  background-color: #356799;
+  color: white;
 }

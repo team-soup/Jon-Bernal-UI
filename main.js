@@ -9,9 +9,9 @@ menuBtn.addEventListener('click', function() {
   menuItems.forEach((el) => {
     el.classList.toggle('hidden');
   });
-  if (menuBtn.textContent === "MENU"){
-    menuBtn.textContent = "CLOSE";
+  if (menuBtn.textContent === "Menu"){
+    menuBtn.textContent = "Close";
   } else {
-    menuBtn.textContent = "MENU";
+    menuBtn.textContent = "Menu";
   }
 });
