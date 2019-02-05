@@ -264,11 +264,28 @@ footer .container {
   padding: 60px 0;
   background-color: #323232;
 }
+@media (min-width: 1000px) {
+  .serviceTimes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
 .serviceTimes .card {
   width: 90%;
   margin: 0 auto;
   padding: 5%;
   background-color: #eff9f0;
+}
+@media (min-width: 500px) {
+  .serviceTimes .card {
+    width: 66%;
+  }
+}
+@media (min-width: 1000px) {
+  .serviceTimes .card {
+    width: 45%;
+  }
 }
 .serviceTimes .card h3 {
   font-size: 1.75rem;
@@ -306,17 +323,42 @@ footer .container {
   font-size: 1.8rem;
 }
 .volCall {
-  width: 90%;
+  width: 80%;
   margin: 30px auto 0px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (min-width: 500px) {
+  .volCall {
+    width: 66%;
+  }
+}
+@media (min-width: 1000px) {
+  .volCall {
+    width: 45%;
+  }
 }
 .volCall h4 {
   text-align: center;
   font-size: 1.8rem;
-  color: white;
+  color: #2e964f;
+}
+@media (min-width: 500px) {
+  .volCall h4 {
+    font-size: 2.4rem;
+    font-weight: bold;
+  }
 }
 .volCall p {
   margin-top: 20px;
   color: white;
+}
+.vol-btn {
+  background-color: #2e964f;
+  color: white;
+  margin-top: 20px;
 }
 .photos {
   padding: 60px 0;
@@ -336,18 +378,34 @@ footer .container {
   min-height: 200px;
   margin: 10px 0;
 }
+@media (min-width: 500px) {
+  .photos .photoSplit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 66%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1000px) {
+  .photos .photoSplit {
+    width: 50%;
+  }
+}
 .giveBack {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .giveBack p {
-  margin-bottom: 30px;
+  margin: 30px 0;
 }
 .giveBack .split {
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .btn-green {
   background-color: #2e964f;
