@@ -233,6 +233,13 @@ body {
   width: 50%;
   max-width: 150px;
 }
+@media (min-width: 1000px) {
+  .menu {
+    flex-direction: row;
+    max-width: 100%;
+    width: 100%;
+  }
+}
 .nav-item {
   color: #eff9f0;
   width: 100%;
@@ -301,7 +308,7 @@ footer .container {
   padding: 5%;
   background-color: #eff9f0;
 }
-@media (min-width: 500px) {
+@media (min-width: 550px) {
   .serviceTimes .card {
     width: 66%;
   }
@@ -354,7 +361,7 @@ footer .container {
   justify-content: space-around;
   align-items: center;
 }
-@media (min-width: 500px) {
+@media (min-width: 550px) {
   .volCall {
     width: 66%;
   }
@@ -369,7 +376,7 @@ footer .container {
   font-size: 1.8rem;
   color: #2e964f;
 }
-@media (min-width: 500px) {
+@media (min-width: 550px) {
   .volCall h4 {
     font-size: 2.4rem;
     font-weight: bold;
@@ -402,7 +409,7 @@ footer .container {
   min-height: 200px;
   margin: 10px 0;
 }
-@media (min-width: 500px) {
+@media (min-width: 550px) {
   .photos .photoSplit {
     display: flex;
     flex-direction: column;
