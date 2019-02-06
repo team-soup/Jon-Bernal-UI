@@ -1,7 +1,7 @@
 .nav {
   padding: 10px 20px;
-  background-color: rgba(0,0,0,.6);
-  position: fixed;
+  // background-color: rgba(0,0,0,.6);
+  background-color: @color-nav-background;
   width: 100%;
 }
 
@@ -10,12 +10,8 @@
 }
 
 .logo-container {
-  .cust-flex(row, center, center);
-}
-
-.logo-container p{
-  color: white;
-  font-size: 2.5rem;
+  .cust-flex(row, space-evenly, center);
+  margin-bottom: 15px;
 }
 
 .logo {
@@ -23,7 +19,40 @@
   height: auto;
 }
 
-.nav-item {
+.logo-container h1 {
   color: white;
+  font-size: 2.75rem;
+  font-weight: bold;
+  text-align: center;
 }
 
+.menu {
+  .cust-flex(column, space-evenly, space-evenly);
+  width: 50%;
+  max-width: 200px;
+}
+
+.menu-btn {
+  .nav-item;
+  background-color: lighten(@color-nav-background, 10%)
+}
+
+.nav-item {
+  color: @color-background;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  margin: 5px 0;
+  font-weight: bold;
+  &:hover {
+    background-color: lighten(@color-nav-background, 15%);
+  }
+}
+
+.nav-active {
+  background-color: lighten(@color-nav-background, 7%);
+}
+
+.hidden {
+  display: none;
+}

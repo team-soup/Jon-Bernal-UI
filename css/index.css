@@ -4,9 +4,12 @@
   font-weight: 400;
   src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v9/jizaRExUiTo99u79D0KEwA.ttf) format('truetype');
 }
+.card {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
 .btn {
-  padding: 15px 20px;
-  font-size: 2.2rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  padding: 15px;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -99,6 +102,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -138,6 +142,7 @@ table {
 }
 html {
   font-size: 62%;
+  font-family: 'PT Sans', sans-serif;
 }
 a {
   text-decoration: none;
@@ -153,10 +158,12 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+body {
+  background-color: #eff9f0;
+}
 .nav {
   padding: 10px 20px;
-  background-color: rgba(0, 0, 0, 0.6);
-  position: fixed;
+  background-color: #323232;
   width: 100%;
 }
 .nav .container {
@@ -168,17 +175,243 @@ p {
 .logo-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-}
-.logo-container p {
-  color: white;
-  font-size: 2.5rem;
+  margin-bottom: 15px;
 }
 .logo {
   width: 100px;
   height: auto;
 }
+.logo-container h1 {
+  color: white;
+  font-size: 2.75rem;
+  font-weight: bold;
+  text-align: center;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+  width: 50%;
+  max-width: 200px;
+}
+.menu-btn {
+  color: #eff9f0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  margin: 5px 0;
+  font-weight: bold;
+  background-color: #4c4c4c;
+}
+.menu-btn:hover {
+  background-color: #585858;
+}
 .nav-item {
+  color: #eff9f0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  margin: 5px 0;
+  font-weight: bold;
+}
+.nav-item:hover {
+  background-color: #585858;
+}
+.nav-active {
+  background-color: #444444;
+}
+.hidden {
+  display: none;
+}
+footer {
+  width: 100%;
+  padding: 30px 0;
+  background-color: #323232;
+}
+footer .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.footer-item {
+  color: white;
+  padding: 10px 3%;
+  width: max-content;
+}
+.hero {
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.hero h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+.hero p {
+  font-size: 2rem;
+  margin-top: 30px;
+  text-align: center;
+}
+.serviceTimes {
+  padding: 60px 0;
+  background-color: #323232;
+}
+@media (min-width: 1000px) {
+  .serviceTimes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+.serviceTimes .card {
+  width: 90%;
+  margin: 0 auto;
+  padding: 5%;
+  background-color: #eff9f0;
+}
+@media (min-width: 500px) {
+  .serviceTimes .card {
+    width: 66%;
+  }
+}
+@media (min-width: 1000px) {
+  .serviceTimes .card {
+    width: 45%;
+  }
+}
+.serviceTimes .card h3 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+}
+.serviceTimes .card div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.serviceTimes .card div .days {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.serviceTimes .card div .days p {
+  margin-bottom: 5px;
+}
+.serviceTimes .card div .hours {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.serviceTimes .card div .hours p {
+  margin-bottom: 5px;
+}
+.serviceTimes .card h4 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.8rem;
+}
+.volCall {
+  width: 80%;
+  margin: 30px auto 0px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (min-width: 500px) {
+  .volCall {
+    width: 66%;
+  }
+}
+@media (min-width: 1000px) {
+  .volCall {
+    width: 45%;
+  }
+}
+.volCall h4 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #2e964f;
+}
+@media (min-width: 500px) {
+  .volCall h4 {
+    font-size: 2.4rem;
+    font-weight: bold;
+  }
+}
+.volCall p {
+  margin-top: 20px;
+  color: white;
+}
+.vol-btn {
+  background-color: #2e964f;
+  color: white;
+  margin-top: 20px;
+}
+.photos {
+  padding: 60px 0;
+  background-color: #eff9f0;
+}
+.photos h3 {
+  font-size: 3rem;
+  text-align: center;
+}
+.photos p {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.photos img {
+  width: 100%;
+  min-height: 200px;
+  margin: 10px 0;
+}
+@media (min-width: 500px) {
+  .photos .photoSplit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 66%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1000px) {
+  .photos .photoSplit {
+    width: 50%;
+  }
+}
+.giveBack {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.giveBack p {
+  margin: 30px 0;
+}
+.giveBack .split {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.btn-green {
+  background-color: #2e964f;
+  color: white;
+}
+.btn-blue {
+  background-color: #356799;
   color: white;
 }
