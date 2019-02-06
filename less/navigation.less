@@ -6,7 +6,27 @@
 }
 
 .nav .container {
+  max-width: 1200px;
   .cust-flex(column, space-evenly, center);
+}
+
+.nav .container .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  @media (min-width: 550px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+.menu-btn {
+  .nav-item;
+  width: 50vw;
+  max-width: 150px;
+  background-color: lighten(@color-nav-background, 10%)
 }
 
 .logo-container {
@@ -26,15 +46,19 @@
   text-align: center;
 }
 
+.menuContainer {
+  margin-top: 0;
+  padding-top: 0;
+  width: 100%;
+  background-color: @color-nav-background;
+  display: flex;
+  justify-content: center;
+}
+
 .menu {
   .cust-flex(column, space-evenly, space-evenly);
   width: 50%;
-  max-width: 200px;
-}
-
-.menu-btn {
-  .nav-item;
-  background-color: lighten(@color-nav-background, 10%)
+  max-width: 150px;
 }
 
 .nav-item {
