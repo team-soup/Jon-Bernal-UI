@@ -233,7 +233,7 @@ body {
   width: 50%;
   max-width: 150px;
 }
-@media (min-width: 1000px) {
+@media (min-width: 550px) {
   .menu {
     flex-direction: row;
     max-width: 100%;
