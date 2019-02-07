@@ -373,6 +373,11 @@ footer .container {
   text-align: center;
   margin: 20px 0;
 }
+@media (min-width: 550px) {
+  .serviceTimes .card h3 {
+    font-size: 2.5rem;
+  }
+}
 .serviceTimes .card div {
   display: flex;
   flex-direction: row;
@@ -388,6 +393,11 @@ footer .container {
 .serviceTimes .card div .days p {
   margin-bottom: 5px;
 }
+@media (min-width: 550px) {
+  .serviceTimes .card div .days p {
+    font-size: 1.8rem;
+  }
+}
 .serviceTimes .card div .hours {
   display: flex;
   flex-direction: column;
@@ -397,10 +407,20 @@ footer .container {
 .serviceTimes .card div .hours p {
   margin-bottom: 5px;
 }
+@media (min-width: 550px) {
+  .serviceTimes .card div .hours p {
+    font-size: 1.8rem;
+  }
+}
 .serviceTimes .card h4 {
   text-align: center;
   margin: 20px 0;
   font-size: 1.8rem;
+}
+@media (min-width: 550px) {
+  .serviceTimes .card h4 {
+    font-size: 2rem;
+  }
 }
 .volCall {
   width: 80%;
@@ -434,6 +454,11 @@ footer .container {
 .volCall p {
   margin-top: 20px;
   color: white;
+}
+@media (min-width: 550px) {
+  .volCall p {
+    font-size: 1.8rem;
+  }
 }
 .vol-btn {
   background-color: #2e964f;
