@@ -13,11 +13,13 @@
 </head>
 
 <body>
-  <div class="nav">
-    <nav class="container">
-      <div class="row">
-        <div class="logo-container">
-          <img src="assets/img/soup-logo.png" alt="" class="logo">
+  <div class="stickyFooter">
+
+    <div class="nav">
+      <nav class="container">
+        <div class="row">
+          <div class="logo-container">
+            <img src="assets/img/soup-logo.png" alt="" class="logo">
           <h1>Everybody Eats!<br>Soup Kitchen</h1>
         </div>
         <a href="#" class="menu-btn">Menu</a>
@@ -35,29 +37,49 @@
     </div>
   </div>
   <main>
-
-      <section class="contact">
-        <div class="contact-left">
-          <h2>Contact Us</h2>
-          <p>Greg or Sharon will be back with you as soon as possible.</p>
-          <p>Email: INFO@EATS!.ORG</p>
-          <p>Tel: 731-555-5555</p>
-          <p>Fax: 731-555-4545</p>
-          <p>Address: 133 Airways Blvd <br>Tupalo,TN 38302</p>
-          <p>Hours: <br>Mon, 9-4 <br>Tues-Fri 8-4</p>
-        </div>
-        <div class="contact-right">
-          <form action="No-action" method="Post">
-            <input type="text" name="name">
-            <input type="email" name="_replyto">
-            <textarea></textarea>
-            <input type="submit" value="Send">
+    <section class="contact">
+      <div class="contact-left">
+        <h2>Contact Us</h2>
+        <p>Feel free to fill out the contact form below and Greg or Sharon will contact you as soon as possible.</p>
+          <form>
+            <label for="name">name</label>
+            <input Placeholder="Jill Smith" type="text" name="name">
+            
+            <label for="_replyto">Email</label>
+            <input Placeholder="name@example.com" type="email" name="_replyto">
+            
+            <label for="_message">How can we help you?</label>
+            <textarea Placeholder="I would love to volunteer!" name="_message"></textarea>
+            
+            <input type="submit" value="Send" class="btn submit">
           </form>
         </div>
-      </section>
-
+      <div class="contact-right">
+        <div class="contact-item">
+          <h6 class="contact-label">Email</h6>
+          <p>INFO@EATS!.ORG</p>
+        </div>
+        <div class="contact-item">
+          <h6 class="contact-label">Telephone</h6>
+          <p>731-555-5555</p>
+        </div>
+        <div class="contact-item">
+            <h6 class="contact-label">Fax</h6>
+            <p>731-555-4545</p>
+        </div>
+        <div class="contact-item">
+          <h6 class="contact-label">Address</h6>
+          <p>133 Airways Blvd <br>Tupalo,TN 38302</p>
+        </div>
+        <div class="contact-item">
+          <h6 class="contact-label">Hours</h6>
+          <p>Mon, 9-4 <br>Tues-Fri 8-4</p>
+        </div>
+      </div>
+    </section>
   </main>
-
+  
+  </div> <!-- end sticky footer-->
   <footer class="footer">
     <nav class="container">
       <a href="#index.html" class="footer-item">Home</a>

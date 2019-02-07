@@ -314,13 +314,95 @@ footer .container {
   height: 100%;
   object-fit: cover;
 }
+html,
+body {
+  min-height: 100vh;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+}
 main {
   width: 100%;
   background-color: #eff9f0;
 }
 main .contact {
-  max-width: 1200px;
+  max-width: 600px;
   margin: 0 auto;
+}
+@media (min-width: 550px) {
+  main .contact {
+    display: flex;
+    align-items: center;
+  }
+}
+.contact-left {
+  padding: 10%;
+}
+@media (min-width: 550px) {
+  .contact-left {
+    width: 80%;
+    padding: 3%;
+    flex-grow: 3;
+  }
+}
+.contact-left h2 {
+  font-size: 3rem;
+  color: #2e964f;
+  text-align: center;
+}
+.contact-left p {
+  margin-top: 20px;
+}
+.contact-left form {
+  width: 100%;
+  margin-top: 10px;
+}
+.contact-left form input,
+.contact-left form textarea {
+  width: 100%;
+  font-size: 1.5rem;
+  color: #30323D;
+  border: 0px;
+  box-sizing: border-box;
+  padding: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.contact-left form label {
+  display: block;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  margin-bottom: 2px;
+}
+.contact-left form textarea {
+  min-height: 100px;
+}
+.contact-left form .submit {
+  background-color: #2e964f;
+  color: white;
+  margin-top: 20px;
+}
+.contact-left form .submit:hover {
+  background-color: #288245;
+}
+.contact-right {
+  padding: 0 10% 10% 10%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+@media (min-width: 550px) {
+  .contact-right {
+    padding: 3%;
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+}
+.contact-right .contact-label {
+  color: #2e964f;
+  font-size: 2rem;
+  margin-top: 20px;
 }

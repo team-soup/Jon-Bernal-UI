@@ -1,12 +1,91 @@
+// Make footer always at the bottom
+
+html, body {
+  min-height: 100vh;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+}
+
+
+
 main {
   width: 100%;
   background-color: @color-background;
   .contact {
-    max-width: 1200px;
+    max-width: 600px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+    @media @tablet {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
 
+.contact-left {
+  padding: 10%;
+  @media @tablet {
+    width: 80%;
+    padding: 3%;
+    flex-grow: 3;
+  }
+  h2 {
+    font-size: 3rem;
+    color: @color-seaGreen;
+    text-align: center;
+  }
+  p {
+    margin-top: 20px;
+  }
+  form {
+    width: 100%;
+    margin-top: 10px;
+    input, textarea {
+      width: 100%;
+      font-size: 1.5rem;
+      color: @color-text;
+      border: 0px;
+      box-sizing: border-box;
+      padding: 10px;
+      .card;
+    }
+    label {
+      display: block;
+      margin-top: 20px;
+      font-size: 1.5rem;
+      margin-bottom: 2px;
+    }
+    textarea {
+      min-height: 100px;
+    }
+    .submit {
+      background-color: @color-seaGreen;
+      color: white;
+      margin-top: 20px;
+      &:hover {
+        background-color: darken(@color-seaGreen, 5%);
+      }
+    }
+  }
+}
 
+.contact-right {
+  padding: 0 10% 10% 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  @media @tablet {
+    padding: 3%;
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+  .contact-label {
+    color: @color-seaGreen;
+    font-size: 2rem;
+    margin-top: 20px;
   }
 }
