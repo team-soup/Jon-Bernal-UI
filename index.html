@@ -5,33 +5,52 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Soup Kitchen</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
+
 </head>
 <body>
   <div class="nav">
     <nav class="container">
-      <div class="logo-container">
-        <img src="assets/img/soup-logo.png" alt="" class="logo">
-        <h1>Everybody Eats!<br>Soup Kitchen</h1>
-      </div>
-      <div class="menu">
+      <div class="row">
+        <div class="logo-container">
+          <img src="assets/img/soup-logo.png" alt="" class="logo">
+          <h1>Everybody Eats!<br>Soup Kitchen</h1>
+        </div>
         <a href="#" class="menu-btn">Menu</a>
-        <a href="#index.html" class="nav-item nav-active">Home</a>
-        <a href="#about.html" class="nav-item">Donate</a>
-        <a href="#" class="nav-item">Mission</a>
-        <a href="#" class="nav-item">Volunteer</a>
-        <a href="#" class="nav-item">Contact Us</a>
-        <a href="#" class="nav-item">Login</a>
       </div>
     </nav>
   </div>
-
+  <div class="menuContainer">
+    <div class="menu">
+      <a href="#index.html" class="nav-item nav-active">Home</a>
+      <a href="#" class="nav-item">Donate</a>
+      <a href="#" class="nav-item">Mission</a>
+      <a href="#" class="nav-item">Volunteer</a>
+      <a href="#" class="nav-item">Contact Us</a>
+      <a href="https://soup-kitchen.netlify.com/" class="nav-item">Login</a>
+    </div>
+  </div>
   <!-- Media Objects featured Info -->
   <main>
     <section class="hero">
-      <h2>Hot Meals served 365 days a year</h2>
-      <p>The Everybody Eats! Soup Kitchen provides hot, nutritious meals 365 days a year.  There is no charge for the meals and no one is turned away. We serve on average 200 meals a day.</p>
+      <div class="hero-container">
+        <div>
+          <h2>Hot Meals served 365 days a year</h2>
+          <p>The Everybody Eats! Soup Kitchen provides hot, nutritious meals 365 days a year.  There is no charge for the meals and no one is turned away. We serve on average 200 meals a day.</p>
+        </div>
+        <div class="carousel">
+          <button class="carousel-left carousel-btn"><i class="fas fa-arrow-left"></i></button>
+          <img class="carousel-img" src="assets/img/carousel2.jpg" alt="">
+          <img class="carousel-img hidden" src="assets/img/carousel3.jpg" alt="">
+          <img class="carousel-img hidden" src="assets/img/carousel4.jpg" alt="">
+          <img class="carousel-img hidden" src="assets/img/carousel5.jpg" alt="">
+          <button class="carousel-right carousel-btn"><i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
     </section>
+    
 
     <section class="serviceTimes">
         <div class="card">
@@ -76,13 +95,14 @@
   <footer class="footer">
     <nav class="container">
       <a href="#index.html" class="footer-item">Home</a>
-      <a href="#about.html" class="footer-item">Donate</a>
+      <a href="#" class="footer-item">Donate</a>
       <a href="#" class="footer-item">Mission</a>
       <a href="#" class="footer-item">Volunteer</a>
       <a href="#" class="footer-item">Contact Us</a>
-      <a href="#" class="footer-item">Login</a>
+      <a href="https://soup-kitchen.netlify.com/" class="footer-item">Login</a>
     </nav>
   </footer>
-  <script src="main.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/carousel.js"></script>
 </body>
 </html>
