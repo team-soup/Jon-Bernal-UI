@@ -401,8 +401,10 @@ main .contact {
     flex-basis: 0;
   }
 }
-.contact-right .contact-label {
+.contact-right .contact-item {
+  margin: 10px;
+}
+.contact-right .contact-item .contact-label {
   color: #2e964f;
   font-size: 2rem;
-  margin-top: 20px;
 }
