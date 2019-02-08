@@ -25,14 +25,17 @@
 .serviceTimes {
   padding: 60px 0;
   background-color: #323232;
-  @media @desktop {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-  .card {
-    width: 90%;
-    margin: 0 auto;
+  .service-contain {
+    max-width: 1200px;   
+    margin: 0 auto; 
+    @media @desktop {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+    .card {
+      width: 90%;
+      margin: 0 auto;
     padding: 5%;
     background-color: @color-background;
     @media @tablet {
@@ -80,6 +83,7 @@
       }
     }
   }
+}
 }
 
 .volCall {
