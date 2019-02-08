@@ -340,89 +340,89 @@ footer .container {
 .hero .hero-container .carousel {
   margin: 30px 0 60px;
 }
-.serviceTimes {
+.service-times {
   padding: 60px 0;
   background-color: #323232;
 }
-.serviceTimes .service-contain {
+.service-times .service-contain {
   max-width: 1200px;
   margin: 0 auto;
 }
 @media (min-width: 1000px) {
-  .serviceTimes .service-contain {
+  .service-times .service-contain {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
 }
-.serviceTimes .service-contain .card {
+.service-times .service-contain .card {
   width: 90%;
   margin: 0 auto;
   padding: 5%;
   background-color: #eff9f0;
 }
 @media (min-width: 550px) {
-  .serviceTimes .service-contain .card {
+  .service-times .service-contain .card {
     width: 66%;
   }
 }
 @media (min-width: 1000px) {
-  .serviceTimes .service-contain .card {
+  .service-times .service-contain .card {
     width: 45%;
   }
 }
-.serviceTimes .service-contain .card h3 {
+.service-times .service-contain .card h3 {
   font-size: 1.75rem;
   font-weight: bold;
   text-align: center;
   margin: 20px 0;
 }
 @media (min-width: 550px) {
-  .serviceTimes .service-contain .card h3 {
+  .service-times .service-contain .card h3 {
     font-size: 2.5rem;
   }
 }
-.serviceTimes .service-contain .card div {
+.service-times .service-contain .card div {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
 }
-.serviceTimes .service-contain .card div .days {
+.service-times .service-contain .card div .days {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 }
-.serviceTimes .service-contain .card div .days p {
+.service-times .service-contain .card div .days p {
   margin-bottom: 5px;
 }
 @media (min-width: 550px) {
-  .serviceTimes .service-contain .card div .days p {
+  .service-times .service-contain .card div .days p {
     font-size: 1.8rem;
   }
 }
-.serviceTimes .service-contain .card div .hours {
+.service-times .service-contain .card div .hours {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
 }
-.serviceTimes .service-contain .card div .hours p {
+.service-times .service-contain .card div .hours p {
   margin-bottom: 5px;
 }
 @media (min-width: 550px) {
-  .serviceTimes .service-contain .card div .hours p {
+  .service-times .service-contain .card div .hours p {
     font-size: 1.8rem;
   }
 }
-.serviceTimes .service-contain .card h4 {
+.service-times .service-contain .card h4 {
   text-align: center;
   margin: 20px 0;
   font-size: 1.8rem;
 }
 @media (min-width: 550px) {
-  .serviceTimes .service-contain .card h4 {
+  .service-times .service-contain .card h4 {
     font-size: 2rem;
   }
 }
@@ -473,22 +473,26 @@ footer .container {
   padding: 60px 0;
   background-color: #eff9f0;
 }
-.photos h3 {
+.photos .photo-contain {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.photos .photo-contain h3 {
   font-size: 3rem;
   text-align: center;
 }
-.photos p {
+.photos .photo-contain p {
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
 }
-.photos img {
+.photos .photo-contain img {
   width: 100%;
   min-height: 200px;
   margin: 10px 0;
 }
 @media (min-width: 550px) {
-  .photos .photoSplit {
+  .photos .photo-contain .photoSplit {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -497,7 +501,7 @@ footer .container {
   }
 }
 @media (min-width: 1000px) {
-  .photos .photoSplit {
+  .photos .photo-contain .photoSplit {
     width: 50%;
   }
 }
