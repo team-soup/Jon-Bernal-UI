@@ -22,17 +22,20 @@
   }
 }
 
-.serviceTimes {
+.service-times {
   padding: 60px 0;
   background-color: #323232;
-  @media @desktop {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-  .card {
-    width: 90%;
-    margin: 0 auto;
+  .service-contain {
+    max-width: 1200px;   
+    margin: 0 auto; 
+    @media @desktop {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+    .card {
+      width: 90%;
+      margin: 0 auto;
     padding: 5%;
     background-color: @color-background;
     @media @tablet {
@@ -46,6 +49,9 @@
       font-weight: bold;
       text-align: center;
       margin: 20px 0;
+      @media @tablet {
+        font-size: 2.5rem;
+      }
     }
     div {
       .cust-flex(row, space-evenly, center);
@@ -53,12 +59,18 @@
         .cust-flex(column, flex-start, center);
         p {
           margin-bottom: 5px;
+          @media @tablet {
+            font-size: 1.8rem;
+          }
         }
       }
       .hours {
         .cust-flex(column, flex-end, center);
         p {
           margin-bottom: 5px;
+          @media @tablet {
+            font-size: 1.8rem;
+          }
         }
       }
     }
@@ -66,8 +78,12 @@
       text-align: center;
       margin: 20px 0;
       font-size: 1.8rem;
+      @media @tablet {
+        font-size: 2rem;
+      }
     }
   }
+}
 }
 
 .volCall {
@@ -92,6 +108,9 @@
   p {
     margin-top: 20px;
     color: white;
+    @media @tablet {
+      font-size: 1.8rem;
+    }
   }
 }
 
@@ -104,15 +123,18 @@
 .photos {
   padding: 60px 0; 
   background-color: @color-background;
-  h3 {
-    font-size: 3rem;
-    text-align: center;
-  }
-  p {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
-  }
+  .photo-contain{
+    max-width: 1200px;
+    margin: 0 auto;
+    h3 {
+      font-size: 3rem;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+    }
   img {
     width: 100%;
     min-height: 200px;
@@ -132,6 +154,7 @@
       width: 50%;
     }
   }
+}
 }
 
 .giveBack {

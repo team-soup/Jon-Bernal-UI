@@ -1,5 +1,7 @@
 let menuBtn = document.querySelector('.menu-btn');
 let menuItems = document.querySelectorAll('.nav-item');
+let nav = document.querySelector('.nav');
+
 
 menuItems.forEach((el) => {
   el.classList.add('hidden');

@@ -10,7 +10,7 @@
   <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
 
 </head>
-<body>
+<body id="top">
   <div class="nav">
     <nav class="container">
       <div class="row">
@@ -24,11 +24,11 @@
   </div>
   <div class="menuContainer">
     <div class="menu">
-      <a href="#index.html" class="nav-item nav-active">Home</a>
+      <a href="top" class="nav-item nav-active">Home</a>
       <a href="#" class="nav-item">Donate</a>
       <a href="#" class="nav-item">Mission</a>
       <a href="#" class="nav-item">Volunteer</a>
-      <a href="#" class="nav-item">Contact Us</a>
+      <a href="contact.html" class="nav-item">Contact Us</a>
       <a href="https://soup-kitchen.netlify.com/" class="nav-item">Login</a>
     </div>
   </div>
@@ -52,7 +52,8 @@
     </section>
     
 
-    <section class="serviceTimes">
+    <section class="service-times">
+      <div class="service-contain">
         <div class="card">
           <h3>Soup Kitchen Service Hours</h3>
           <div>
@@ -69,22 +70,25 @@
           </div>
           <h4>Lunch Served Daily</h4>
         </div>
-      <div class="volCall">
-        <h4>VOLUNTEERS ARE IMPORTANT</h4>
-        <p>Everybody Eats! Soup Kitchen relies on more than 1,000 volunteers annualy.  In addition, all of the frood served in our soup kitchen is donated from area restaurants, businesses, churches, vcivic groups and individuals.  More than 65,000 pounds of food is donated each year to feed the hungry in our community.</p>
-        <a href="#volunteer" class="btn vol-btn">Volunteer Today!</a>
+        <div class="volCall">
+          <h4>VOLUNTEERS ARE IMPORTANT</h4>
+          <p>Everybody Eats! Soup Kitchen relies on more than 1,000 volunteers annualy.  In addition, all of the frood served in our soup kitchen is donated from area restaurants, businesses, churches, vcivic groups and individuals.  More than 65,000 pounds of food is donated each year to feed the hungry in our community.</p>
+          <a href="#volunteer" class="btn vol-btn">Volunteer Today!</a>
+        </div>
       </div>
     </section>
 
     <section class="photos">
-      <h3>Everybody Eats!</h3>
-      <div class="photoSplit">
-        <img src="https://images.unsplash.com/photo-1534750554350-5d579939db38?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
-        <div class="giveBack">
-          <p>Help a community that needs you.</p>
-          <div class="split">
-            <a href="#volunteer" class="btn btn-green">How to Volunteer</a>
-            <a href="#Donate" class="btn btn-green">How to Donate</a>
+      <div class="photo-contain">
+        <h3>Everybody Eats!</h3>
+        <div class="photoSplit">
+          <img src="https://images.unsplash.com/photo-1534750554350-5d579939db38?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
+          <div class="giveBack">
+            <p>Help a community that needs you.</p>
+            <div class="split">
+              <a href="#volunteer" class="btn btn-green">How to Volunteer</a>
+              <a href="#Donate" class="btn btn-green">How to Donate</a>
+            </div>
           </div>
         </div>
       </div>
@@ -94,7 +98,7 @@
 
   <footer class="footer">
     <nav class="container">
-      <a href="#index.html" class="footer-item">Home</a>
+      <a href="#top" class="footer-item nav-active">Home</a>
       <a href="#" class="footer-item">Donate</a>
       <a href="#" class="footer-item">Mission</a>
       <a href="#" class="footer-item">Volunteer</a>
